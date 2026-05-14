@@ -12,6 +12,7 @@ CREATE TABLE customers (
     
 SELECT * FROM customers;
 
+<<<<<<< HEAD
 
 -- A : 연령대별 고객 수 분석 쿼리문
 SELECT
@@ -24,3 +25,11 @@ SELECT
     COUNT(*) customer_count
 FROM customers
 GROUP BY age_group;
+=======
+-- B : 성별 고객 수 분석
+SELECT
+	gender,
+    COUNT(*) customer_count
+FROM customers
+GROUP BY gender;
+>>>>>>> origin/B
